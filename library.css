@@ -1,0 +1,64 @@
+.book-form {
+  display: none;
+  flex-direction: column;
+  max-width: 300px;
+}
+.book-form.visible {
+  display: flex;
+}
+.your-library {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  text-decoration: underline;
+}
+.bookcards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.book {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 30px 20px 40px 20px;
+  border: 1px solid black;
+  width: 200px;
+}
+.book-name {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+}
+.book-author {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  font-size: 12px;
+  color: gray;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+}
+.book-pages {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.book-read {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+.read-question {
+  font-size: 12px;
+}
+.book-remove {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+}
