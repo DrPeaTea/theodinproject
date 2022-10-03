@@ -22,8 +22,6 @@ function removeBook(event) {
 }
 
 function renderBook(newBook) {
-  // console.log(list.childNodes);
-
   // Add a child item
   const bookCard = document.createElement("div");
   const bookName = document.createElement("div");
@@ -59,12 +57,11 @@ function renderBook(newBook) {
   readStatus.appendChild(bookRead);
   bookRead.classList.add("book-read");
   bookRead.type = "checkbox";
+  bookRead.checked = newBook.read;
+
   bookCard.appendChild(removeButton);
   removeButton.classList.add("book-remove");
   removeButton.onclick = removeBook;
-
-  // for (let i = 0; i < books.length; i++) {
-  //   console.log(books[i]);}
 }
 
 if (form) {
