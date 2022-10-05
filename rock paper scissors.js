@@ -4,9 +4,9 @@ const paperPlayer = document.querySelector(".paper");
 const scissorsPlayer = document.querySelector(".scissors");
 
 const options= { //This is an Enumerated Type
-  Rock: options.Rock,
-  Paper: options.Paper,
-  Scissors: options.Scissors
+  Rock: "rock",
+  Paper: "paper",
+  Scissors: "scissors"
 };
 
 const optionsMap = { 
